@@ -1,0 +1,505 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Apr  7 01:05:21 2019
+| Host         : LAPTOP-HURMG58C running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Voice_Scope_TOP_control_sets_placed.rpt
+| Design       : Voice_Scope_TOP
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   436 |
+| Unused register locations in slices containing registers |   116 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      8 |           31 |
+|     10 |            1 |
+|     12 |            1 |
+|     14 |            2 |
+|    16+ |          400 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             784 |          184 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             406 |          114 |
+| Yes          | No                    | No                     |            1030 |          219 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             368 |          103 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------------+------------------------------------------------+---------------------------+------------------+----------------+
+|               Clock Signal               |                  Enable Signal                 |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
++------------------------------------------+------------------------------------------------+---------------------------+------------------+----------------+
+|  J_MIC3_Pin1_OBUF_BUFG                   |                                                | z/an[1]_i_1_n_1           |                1 |              2 |
+|  slow_clock_BUFG                         | h/waveform_set[24]_i_1_n_1                     |                           |                1 |              8 |
+|  slow_clock_BUFG                         | h/tick_set[12]_i_1_n_1                         |                           |                1 |              8 |
+|  slow_clock_BUFG                         | l/green_reg[0][0]                              |                           |                1 |              8 |
+|  slow_clock_BUFG                         | l/blue_reg[0][0]                               |                           |                1 |              8 |
+|  slow_clock_BUFG                         | h/p_0_in[35]                                   |                           |                1 |              8 |
+|  slow_clock_BUFG                         | h/p_0_in[11]                                   |                           |                1 |              8 |
+|  slow_clock_BUFG                         | h/grid_set[48]_i_1_n_1                         |                           |                2 |              8 |
+|  slow_clock_BUFG                         | h/p_0_in[47]                                   |                           |                3 |              8 |
+|  slow_clock_BUFG                         | h/axis_set[12]_i_1_n_1                         |                           |                1 |              8 |
+|  slow_clock_BUFG                         | h/tick_set[0]_i_1_n_1                          |                           |                1 |              8 |
+|  slow_clock_BUFG                         | h/waveform_set[0]_i_1_n_1                      |                           |                2 |              8 |
+|  slow_clock_BUFG                         | h/p_0_in[59]                                   |                           |                1 |              8 |
+|  slow_clock_BUFG                         | h/waveform_set[12]_i_1_n_1                     |                           |                1 |              8 |
+|  slow_clock_BUFG                         | h/grid_set[36]_i_1_n_1                         |                           |                1 |              8 |
+|  slow_clock_BUFG                         | h/axis_set[48]_i_1_n_1                         |                           |                1 |              8 |
+|  slow_clock_BUFG                         | h/axis_set[36]_i_1_n_1                         |                           |                1 |              8 |
+|  slow_clock_BUFG                         | u/a/a/counter_reg[0]                           |                           |                2 |              8 |
+|  slow_clock_BUFG                         | l/red_reg[0][0]                                |                           |                1 |              8 |
+|  slow_clock_BUFG                         | h/tick_set[24]_i_1_n_1                         |                           |                1 |              8 |
+|  slow_clock_BUFG                         | h/axis_set[0]_i_1_n_1                          |                           |                1 |              8 |
+|  slow_clock_BUFG                         | h/tick_set[48]_i_1_n_1                         |                           |                2 |              8 |
+|  slow_clock_BUFG                         | h/axis_set[24]_i_1_n_1                         |                           |                1 |              8 |
+|  slow_clock_BUFG                         | h/p_0_in[23]                                   |                           |                2 |              8 |
+|  slow_clock_BUFG                         | h/waveform_set[48]_i_1_n_1                     |                           |                2 |              8 |
+|  slow_clock_BUFG                         | h/grid_set[12]_i_1_n_1                         |                           |                1 |              8 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e9/count[11]_i_1__4_n_1                        |                           |                2 |              8 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | y/max                                          | y/led[11]_i_1_n_1         |                3 |              8 |
+|  slow_clock_BUFG                         | h/grid_set[24]_i_1_n_1                         |                           |                1 |              8 |
+|  slow_clock_BUFG                         | h/grid_set[0]_i_1_n_1                          |                           |                1 |              8 |
+|  slow_clock_BUFG                         | h/tick_set[36]_i_1_n_1                         |                           |                1 |              8 |
+|  slow_clock_BUFG                         | h/waveform_set[36]_i_1_n_1                     |                           |                2 |              8 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | y/max                                          |                           |                3 |             10 |
+|  J_MIC3_Pin1_OBUF_BUFG                   |                                                | m/count_reg[9]_0          |                3 |             12 |
+|  g/VGA_CLK_108M/h_cntr_reg_reg[9]_rep__2 |                                                |                           |                6 |             14 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | y/max                                          | y/led[7]_i_1_n_1          |                2 |             14 |
+|  slow_clock_BUFG                         | h/tick_set[28]_i_1_n_1                         |                           |                3 |             16 |
+|  slow_clock_BUFG                         | h/waveform_set[4]_i_1_n_1                      |                           |                4 |             16 |
+|  slow_clock_BUFG                         | h/waveform_set[40]_i_1_n_1                     |                           |                4 |             16 |
+|  slow_clock_BUFG                         | h/grid_set[4]_i_1_n_1                          |                           |                2 |             16 |
+|  slow_clock_BUFG                         | h/grid_set[16]_i_1_n_1                         |                           |                2 |             16 |
+|  slow_clock_BUFG                         | h/grid_set[28]_i_1_n_1                         |                           |                4 |             16 |
+|  slow_clock_BUFG                         | h/grid_set[40]_i_1_n_1                         |                           |                2 |             16 |
+|  slow_clock_BUFG                         | h/grid_set[52]_i_1_n_1                         |                           |                4 |             16 |
+|  slow_clock_BUFG                         | h/axis_set[28]_i_1_n_1                         |                           |                2 |             16 |
+|  slow_clock_BUFG                         | h/axis_set[52]_i_1_n_1                         |                           |                4 |             16 |
+|  slow_clock_BUFG                         | h/axis_set[4]_i_1_n_1                          |                           |                2 |             16 |
+|  slow_clock_BUFG                         | h/p_0_in[7]                                    |                           |                5 |             16 |
+|  slow_clock_BUFG                         | h/p_0_in[43]                                   |                           |                2 |             16 |
+|  slow_clock_BUFG                         | h/p_0_in[31]                                   |                           |                2 |             16 |
+|  slow_clock_BUFG                         | h/waveform_set[16]_i_1_n_1                     |                           |                2 |             16 |
+|  slow_clock_BUFG                         | h/p_0_in[19]                                   |                           |                2 |             16 |
+|  slow_clock_BUFG                         | h/tick_set[40]_i_1_n_1                         |                           |                4 |             16 |
+|  slow_clock_BUFG                         | h/axis_set[16]_i_1_n_1                         |                           |                4 |             16 |
+|  slow_clock_BUFG                         | h/axis_set[40]_i_1_n_1                         |                           |                3 |             16 |
+|  slow_clock_BUFG                         | h/waveform_set[28]_i_1_n_1                     |                           |                5 |             16 |
+|  slow_clock_BUFG                         | h/p_0_in[55]                                   |                           |                3 |             16 |
+|  slow_clock_BUFG                         | h/waveform_set[52]_i_1_n_1                     |                           |                5 |             16 |
+|  slow_clock_BUFG                         | h/tick_set[16]_i_1_n_1                         |                           |                4 |             16 |
+|  slow_clock_BUFG                         | h/tick_set[52]_i_1_n_1                         |                           |                4 |             16 |
+|  slow_clock_BUFG                         | h/tick_set[4]_i_1_n_1                          |                           |                4 |             16 |
+|  g/VGA_CLK_108M/h_cntr_reg_reg[9]_rep__2 |                                                | g/VGA_BLUE[3]_i_1_n_1     |                5 |             18 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e11/sum1[9]_i_1__1_n_1                         |                           |                5 |             20 |
+|  J_MIC3_Pin1_OBUF_BUFG                   |                                                | l/sum0                    |                6 |             20 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | c/sum_reg[9]_7[0]                              | d11/sum1[9]_i_1__4_n_1    |                4 |             20 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e9/sum_reg[9]_i_1_n_4                          | e9/count[11]_i_1__4_n_1   |                3 |             20 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | c/sum_reg[9]_6[0]                              | d10/sum1[9]_i_1__3_n_1    |                4 |             20 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | c/sum_reg[9]_4[0]                              | e11/sum1[9]_i_1__1_n_1    |                4 |             20 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | c/sum_reg[9]_5[0]                              | e10/sum1[9]_i_1__2_n_1    |                3 |             20 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | y/max0_carry__0_n_4                            | y/max                     |                5 |             20 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | c/sum_reg[9]_3[0]                              | q/sum[9]_i_1__0_n_1       |                3 |             20 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d11/sum1[9]_i_1__4_n_1                         |                           |                4 |             20 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | c/sum_reg[9]_2[0]                              | q2/sum[9]_i_1_n_1         |                4 |             20 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/sum[9]_i_1_n_1                              |                           |                7 |             20 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e13/sum1[9]_i_1__5_n_1                         |                           |                6 |             20 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e13/sum1[9]_i_1__5_n_1                         | e13/sum[9]_i_1__2_n_1     |                6 |             20 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d10/sum1[9]_i_1__3_n_1                         |                           |                5 |             20 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e10/sum1[9]_i_1__2_n_1                         |                           |                5 |             20 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/sum[9]_i_1__0_n_1                            |                           |                3 |             20 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d12/j_i_1__1_n_1                               |                           |                4 |             22 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e13/j_i_1_n_1                                  |                           |                5 |             22 |
+|  J_MIC3_Pin1_OBUF_BUFG                   |                                                | y/max                     |                3 |             22 |
+|  J_MIC3_Pin1_OBUF_BUFG                   |                                                | e9/count[11]_i_1__4_n_1   |                3 |             22 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e12/j_i_1__0_n_1                               |                           |                6 |             22 |
+|  CLK_IBUF_BUFG                           |                                                | J_MIC3_Pin1_OBUF_BUFG     |                3 |             24 |
+| ~b/CLK                                   |                                                |                           |                5 |             24 |
+|  g/VGA_CLK_108M/h_cntr_reg_reg[9]_rep__2 | l/E[0]                                         |                           |               11 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d/Sample_Memory_reg_1024_1087_0_2_i_1_n_1      |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d/Sample_Memory_reg_1088_1151_0_2_i_1_n_1      |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d/Sample_Memory_reg_1216_1279_0_2_i_1__6_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d/Sample_Memory_reg_0_63_0_2_i_2__0_n_1        |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d/Sample_Memory_reg_1152_1215_0_2_i_1_n_1      |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d/Sample_Memory_reg_256_319_0_2_i_1_n_1        |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d/Sample_Memory_reg_192_255_0_2_i_1__6_n_1     |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d/Sample_Memory_reg_320_383_0_2_i_1_n_1        |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d/Sample_Memory_reg_384_447_0_2_i_1_n_1        |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d/Sample_Memory_reg_128_191_0_2_i_1_n_1        |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d/Sample_Memory_reg_640_703_0_2_i_1_n_1        |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d/Sample_Memory_reg_448_511_0_2_i_1__6_n_1     |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d/Sample_Memory_reg_576_639_0_2_i_1_n_1        |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d/Sample_Memory_reg_512_575_0_2_i_1_n_1        |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d/Sample_Memory_reg_704_767_0_2_i_1__6_n_1     |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d/Sample_Memory_reg_64_127_0_2_i_1_n_1         |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d/Sample_Memory_reg_832_895_0_2_i_1_n_1        |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d/Sample_Memory_reg_896_959_0_2_i_1_n_1        |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d/Sample_Memory_reg_768_831_0_2_i_1_n_1        |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d/Sample_Memory_reg_960_1023_0_2_i_1__6_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d12/Sample_Memory_reg_1088_1151_0_2_i_1__8_n_1 |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d12/Sample_Memory_reg_1024_1087_0_2_i_1__8_n_1 |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d12/Sample_Memory_reg_0_63_0_2_i_4__7_n_1      |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d12/Sample_Memory_reg_128_191_0_2_i_1__8_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d12/Sample_Memory_reg_1216_1279_0_2_i_1__5_n_1 |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d12/Sample_Memory_reg_1152_1215_0_2_i_1__8_n_1 |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d12/Sample_Memory_reg_320_383_0_2_i_1__8_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d12/Sample_Memory_reg_256_319_0_2_i_1__8_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d12/Sample_Memory_reg_192_255_0_2_i_1__5_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d12/Sample_Memory_reg_64_127_0_2_i_1__8_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d12/Sample_Memory_reg_512_575_0_2_i_1__8_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d12/Sample_Memory_reg_384_447_0_2_i_1__8_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d12/Sample_Memory_reg_448_511_0_2_i_1__5_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d12/Sample_Memory_reg_576_639_0_2_i_1__8_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d12/Sample_Memory_reg_896_959_0_2_i_1__8_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d12/Sample_Memory_reg_960_1023_0_2_i_1__5_n_1  |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d12/Sample_Memory_reg_704_767_0_2_i_1__5_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d12/Sample_Memory_reg_768_831_0_2_i_1__8_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d12/Sample_Memory_reg_832_895_0_2_i_1__8_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e12/Sample_Memory_reg_0_63_0_2_i_4__2_n_1      |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e12/Sample_Memory_reg_1088_1151_0_2_i_1__1_n_1 |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e12/Sample_Memory_reg_1152_1215_0_2_i_1__1_n_1 |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e12/Sample_Memory_reg_1216_1279_0_2_i_1__0_n_1 |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e12/Sample_Memory_reg_1024_1087_0_2_i_1__1_n_1 |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e12/Sample_Memory_reg_384_447_0_2_i_1__1_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e12/Sample_Memory_reg_448_511_0_2_i_1__0_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e12/Sample_Memory_reg_192_255_0_2_i_1__0_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e12/Sample_Memory_reg_320_383_0_2_i_1__1_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e12/Sample_Memory_reg_128_191_0_2_i_1__1_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e12/Sample_Memory_reg_256_319_0_2_i_1__1_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e12/Sample_Memory_reg_576_639_0_2_i_1__1_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e12/Sample_Memory_reg_640_703_0_2_i_1__1_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e12/Sample_Memory_reg_64_127_0_2_i_1__1_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e12/Sample_Memory_reg_704_767_0_2_i_1__0_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e12/Sample_Memory_reg_512_575_0_2_i_1__1_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e12/Sample_Memory_reg_832_895_0_2_i_1__1_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e12/Sample_Memory_reg_768_831_0_2_i_1__1_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e12/Sample_Memory_reg_896_959_0_2_i_1__1_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e12/Sample_Memory_reg_960_1023_0_2_i_1__0_n_1  |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e13/Sample_Memory_reg_0_63_0_2_i_4__1_n_1      |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e13/Sample_Memory_reg_192_255_0_2_i_1_n_1      |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e13/Sample_Memory_reg_1088_1151_0_2_i_1__0_n_1 |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e13/Sample_Memory_reg_1152_1215_0_2_i_1__0_n_1 |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e13/Sample_Memory_reg_1024_1087_0_2_i_1__0_n_1 |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e13/Sample_Memory_reg_128_191_0_2_i_1__0_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e13/Sample_Memory_reg_1216_1279_0_2_i_1_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e13/Sample_Memory_reg_384_447_0_2_i_1__0_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e13/Sample_Memory_reg_512_575_0_2_i_1__0_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e13/Sample_Memory_reg_448_511_0_2_i_1_n_1      |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e13/Sample_Memory_reg_256_319_0_2_i_1__0_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e13/Sample_Memory_reg_576_639_0_2_i_1__0_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e13/Sample_Memory_reg_320_383_0_2_i_1__0_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e13/Sample_Memory_reg_832_895_0_2_i_1__0_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e13/Sample_Memory_reg_64_127_0_2_i_1__0_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e13/Sample_Memory_reg_704_767_0_2_i_1_n_1      |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e13/Sample_Memory_reg_640_703_0_2_i_1__0_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e13/Sample_Memory_reg_768_831_0_2_i_1__0_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e13/Sample_Memory_reg_896_959_0_2_i_1__0_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e13/Sample_Memory_reg_960_1023_0_2_i_1_n_1     |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e13/mem_reg_0_63_0_2_i_1_n_1                   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e13/mem_reg_128_191_0_2_i_1_n_1                |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e13/mem_reg_256_319_0_2_i_1_n_1                |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e13/mem_reg_448_511_0_2_i_1_n_1                |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e13/mem_reg_320_383_0_2_i_1_n_1                |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e13/mem_reg_384_447_0_2_i_1_n_1                |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e13/mem_reg_192_255_0_2_i_1_n_1                |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e13/mem_reg_512_575_0_2_i_1_n_1                |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e13/mem_reg_576_639_0_2_i_1_n_1                |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e13/mem_reg_64_127_0_2_i_1_n_1                 |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/mem1_reg_0_63_0_2_i_4__0_n_1                 |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/mem1_reg_1088_1151_0_2_i_1__0_n_1            |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/mem1_reg_1024_1087_0_2_i_1__0_n_1            |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/mem1_reg_1152_1215_0_2_i_1__0_n_1            |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/mem1_reg_384_447_0_2_i_1__0_n_1              |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/mem1_reg_192_255_0_2_i_1__0_n_1              |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/mem1_reg_256_319_0_2_i_1__0_n_1              |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/mem1_reg_320_383_0_2_i_1__0_n_1              |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/mem1_reg_128_191_0_2_i_1__0_n_1              |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/mem1_reg_1216_1279_0_2_i_1__0_n_1            |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/mem1_reg_576_639_0_2_i_1__0_n_1              |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/mem1_reg_640_703_0_2_i_1__0_n_1              |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/mem1_reg_64_127_0_2_i_1__0_n_1               |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/mem1_reg_448_511_0_2_i_1__0_n_1              |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/mem1_reg_704_767_0_2_i_1__0_n_1              |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/mem1_reg_512_575_0_2_i_1__0_n_1              |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/mem2_reg_1088_1151_0_2_i_1__0_n_1            |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/mem1_reg_896_959_0_2_i_1__0_n_1              |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/mem1_reg_960_1023_0_2_i_1__0_n_1             |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/mem1_reg_832_895_0_2_i_1__0_n_1              |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/mem1_reg_768_831_0_2_i_1__0_n_1              |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/mem2_reg_1024_1087_0_2_i_1__0_n_1            |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/mem2_reg_1216_1279_0_2_i_1__0_n_1            |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/mem2_reg_1152_1215_0_2_i_1__0_n_1            |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/mem2_reg_832_895_0_2_i_1__0_n_1              |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/mem2_reg_640_703_0_2_i_1__0_n_1              |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/mem2_reg_896_959_0_2_i_1__0_n_1              |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/mem2_reg_704_767_0_2_i_1__0_n_1              |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/mem2_reg_768_831_0_2_i_1__0_n_1              |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/mem2_reg_960_1023_0_2_i_1__0_n_1             |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/mem1_reg_0_63_0_2_i_4_n_1                   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/mem1_reg_1152_1215_0_2_i_1_n_1              |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/mem1_reg_1024_1087_0_2_i_1_n_1              |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/mem1_reg_1088_1151_0_2_i_1_n_1              |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/mem1_reg_192_255_0_2_i_1_n_1                |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/mem1_reg_1216_1279_0_2_i_1_n_1              |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/mem1_reg_384_447_0_2_i_1_n_1                |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/mem1_reg_320_383_0_2_i_1_n_1                |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/mem1_reg_256_319_0_2_i_1_n_1                |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/mem1_reg_128_191_0_2_i_1_n_1                |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/mem1_reg_512_575_0_2_i_1_n_1                |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/mem1_reg_448_511_0_2_i_1_n_1                |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d12/Sample_Memory_reg_640_703_0_2_i_1__8_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/mem1_reg_704_767_0_2_i_1_n_1                |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/mem1_reg_576_639_0_2_i_1_n_1                |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/mem1_reg_64_127_0_2_i_1_n_1                 |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/mem2_reg_1024_1087_0_2_i_1_n_1              |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/mem1_reg_960_1023_0_2_i_1_n_1               |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/mem1_reg_832_895_0_2_i_1_n_1                |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/mem1_reg_768_831_0_2_i_1_n_1                |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/mem1_reg_896_959_0_2_i_1_n_1                |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/mem2_reg_1152_1215_0_2_i_1_n_1              |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/mem2_reg_1216_1279_0_2_i_1_n_1              |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/mem2_reg_1088_1151_0_2_i_1_n_1              |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/mem2_reg_832_895_0_2_i_1_n_1                |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/mem2_reg_704_767_0_2_i_1_n_1                |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/mem2_reg_768_831_0_2_i_1_n_1                |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/mem2_reg_640_703_0_2_i_1_n_1                |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/mem2_reg_960_1023_0_2_i_1_n_1               |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/mem2_reg_896_959_0_2_i_1_n_1                |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d10/Sample_Memory_reg_1152_1215_0_2_i_1__6_n_1 |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d10/Sample_Memory_reg_128_191_0_2_i_1__6_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d10/Sample_Memory_reg_1216_1279_0_2_i_1__3_n_1 |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d10/Sample_Memory_reg_192_255_0_2_i_1__3_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d10/Sample_Memory_reg_0_63_0_2_i_1__5_n_1      |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d10/Sample_Memory_reg_1088_1151_0_2_i_1__6_n_1 |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d10/Sample_Memory_reg_1024_1087_0_2_i_1__6_n_1 |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e10/Sample_Memory_reg_1024_1087_0_2_i_1__3_n_1 |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e10/Sample_Memory_reg_0_63_0_2_i_1__4_n_1      |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e10/Sample_Memory_reg_1152_1215_0_2_i_1__3_n_1 |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e10/Sample_Memory_reg_128_191_0_2_i_1__3_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e10/Sample_Memory_reg_1088_1151_0_2_i_1__3_n_1 |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e10/Sample_Memory_reg_1216_1279_0_2_i_1__2_n_1 |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e10/Sample_Memory_reg_192_255_0_2_i_1__2_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e10/Sample_Memory_reg_256_319_0_2_i_1__3_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e10/Sample_Memory_reg_448_511_0_2_i_1__2_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e10/Sample_Memory_reg_512_575_0_2_i_1__3_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e10/Sample_Memory_reg_384_447_0_2_i_1__3_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e10/Sample_Memory_reg_320_383_0_2_i_1__3_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e10/Sample_Memory_reg_576_639_0_2_i_1__3_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e10/Sample_Memory_reg_896_959_0_2_i_1__3_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e10/Sample_Memory_reg_704_767_0_2_i_1__2_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e10/Sample_Memory_reg_640_703_0_2_i_1__3_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e10/Sample_Memory_reg_832_895_0_2_i_1__3_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e10/Sample_Memory_reg_64_127_0_2_i_1__3_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e10/Sample_Memory_reg_768_831_0_2_i_1__3_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e10/Sample_Memory_reg_960_1023_0_2_i_1__2_n_1  |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e8/Sample_Memory_reg_1088_1151_0_2_i_1__4_n_1  |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e11/Sample_Memory_reg_0_63_0_2_i_1__3_n_1      |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e11/Sample_Memory_reg_1024_1087_0_2_i_1__2_n_1 |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e11/Sample_Memory_reg_192_255_0_2_i_1__1_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e11/Sample_Memory_reg_1152_1215_0_2_i_1__2_n_1 |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e11/Sample_Memory_reg_1088_1151_0_2_i_1__2_n_1 |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e11/Sample_Memory_reg_256_319_0_2_i_1__2_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e11/Sample_Memory_reg_1216_1279_0_2_i_1__1_n_1 |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e11/Sample_Memory_reg_128_191_0_2_i_1__2_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e11/Sample_Memory_reg_576_639_0_2_i_1__2_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e11/Sample_Memory_reg_384_447_0_2_i_1__2_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e11/Sample_Memory_reg_320_383_0_2_i_1__2_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e11/Sample_Memory_reg_512_575_0_2_i_1__2_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e11/Sample_Memory_reg_640_703_0_2_i_1__2_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e11/Sample_Memory_reg_448_511_0_2_i_1__1_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e11/Sample_Memory_reg_896_959_0_2_i_1__2_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e11/Sample_Memory_reg_64_127_0_2_i_1__2_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e11/Sample_Memory_reg_704_767_0_2_i_1__1_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e11/Sample_Memory_reg_832_895_0_2_i_1__2_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e11/Sample_Memory_reg_768_831_0_2_i_1__2_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e11/Sample_Memory_reg_960_1023_0_2_i_1__1_n_1  |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e8/Sample_Memory_reg_1152_1215_0_2_i_1__4_n_1  |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e8/Sample_Memory_reg_0_63_0_2_i_2__5_n_1       |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e8/Sample_Memory_reg_1024_1087_0_2_i_1__4_n_1  |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d10/Sample_Memory_reg_448_511_0_2_i_1__3_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d10/Sample_Memory_reg_256_319_0_2_i_1__6_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d10/Sample_Memory_reg_576_639_0_2_i_1__6_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d10/Sample_Memory_reg_512_575_0_2_i_1__6_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d10/Sample_Memory_reg_320_383_0_2_i_1__6_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d10/Sample_Memory_reg_384_447_0_2_i_1__6_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d10/Sample_Memory_reg_640_703_0_2_i_1__6_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d10/Sample_Memory_reg_768_831_0_2_i_1__6_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d10/Sample_Memory_reg_832_895_0_2_i_1__6_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d10/Sample_Memory_reg_704_767_0_2_i_1__3_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d10/Sample_Memory_reg_64_127_0_2_i_1__6_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d10/Sample_Memory_reg_896_959_0_2_i_1__6_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d10/Sample_Memory_reg_960_1023_0_2_i_1__3_n_1  |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d11/Sample_Memory_reg_0_63_0_2_i_1__6_n_1      |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d11/Sample_Memory_reg_1088_1151_0_2_i_1__7_n_1 |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d11/Sample_Memory_reg_1216_1279_0_2_i_1__4_n_1 |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d11/Sample_Memory_reg_1024_1087_0_2_i_1__7_n_1 |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d11/Sample_Memory_reg_1152_1215_0_2_i_1__7_n_1 |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d11/Sample_Memory_reg_384_447_0_2_i_1__7_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d11/Sample_Memory_reg_320_383_0_2_i_1__7_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d11/Sample_Memory_reg_256_319_0_2_i_1__7_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d11/Sample_Memory_reg_448_511_0_2_i_1__4_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d11/Sample_Memory_reg_192_255_0_2_i_1__4_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d11/Sample_Memory_reg_128_191_0_2_i_1__7_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d11/Sample_Memory_reg_64_127_0_2_i_1__7_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d11/Sample_Memory_reg_512_575_0_2_i_1__7_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d11/Sample_Memory_reg_576_639_0_2_i_1__7_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d11/Sample_Memory_reg_640_703_0_2_i_1__7_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d11/Sample_Memory_reg_704_767_0_2_i_1__4_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d11/Sample_Memory_reg_832_895_0_2_i_1__7_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d11/Sample_Memory_reg_896_959_0_2_i_1__7_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d11/Sample_Memory_reg_960_1023_0_2_i_1__4_n_1  |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d8/Sample_Memory_reg_128_191_0_2_i_1__5_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d8/Sample_Memory_reg_0_63_0_2_i_2__6_n_1       |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d8/Sample_Memory_reg_1088_1151_0_2_i_1__5_n_1  |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d8/Sample_Memory_reg_1152_1215_0_2_i_1__5_n_1  |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d8/Sample_Memory_reg_1024_1087_0_2_i_1__5_n_1  |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d8/Sample_Memory_reg_1216_1279_0_2_i_1__8_n_1  |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d8/Sample_Memory_reg_256_319_0_2_i_1__5_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d8/Sample_Memory_reg_448_511_0_2_i_1__8_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d8/Sample_Memory_reg_384_447_0_2_i_1__5_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d8/Sample_Memory_reg_192_255_0_2_i_1__8_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d8/Sample_Memory_reg_320_383_0_2_i_1__5_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d8/Sample_Memory_reg_768_831_0_2_i_1__5_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d8/Sample_Memory_reg_512_575_0_2_i_1__5_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d8/Sample_Memory_reg_64_127_0_2_i_1__5_n_1     |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d8/Sample_Memory_reg_576_639_0_2_i_1__5_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d8/Sample_Memory_reg_704_767_0_2_i_1__8_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d8/Sample_Memory_reg_640_703_0_2_i_1__5_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d8/Sample_Memory_reg_960_1023_0_2_i_1__8_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d8/Sample_Memory_reg_832_895_0_2_i_1__5_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d8/Sample_Memory_reg_896_959_0_2_i_1__5_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e8/Sample_Memory_reg_384_447_0_2_i_1__4_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e8/Sample_Memory_reg_192_255_0_2_i_1__7_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e8/Sample_Memory_reg_256_319_0_2_i_1__4_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e8/Sample_Memory_reg_128_191_0_2_i_1__4_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e8/Sample_Memory_reg_320_383_0_2_i_1__4_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e8/Sample_Memory_reg_1216_1279_0_2_i_1__7_n_1  |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e8/Sample_Memory_reg_640_703_0_2_i_1__4_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e8/Sample_Memory_reg_64_127_0_2_i_1__4_n_1     |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e8/Sample_Memory_reg_448_511_0_2_i_1__7_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e8/Sample_Memory_reg_512_575_0_2_i_1__4_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e8/Sample_Memory_reg_576_639_0_2_i_1__4_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e8/Sample_Memory_reg_704_767_0_2_i_1__7_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e8/Sample_Memory_reg_960_1023_0_2_i_1__7_n_1   |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e8/Sample_Memory_reg_896_959_0_2_i_1__4_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e8/Sample_Memory_reg_832_895_0_2_i_1__4_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e8/Sample_Memory_reg_768_831_0_2_i_1__4_n_1    |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/mem1_reg_640_703_0_2_i_1_n_1                |                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d11/Sample_Memory_reg_768_831_0_2_i_1__7_n_1   |                           |                4 |             28 |
+|  slow_clock_BUFG                         | l/FSM_onehot_GRAPH_STATE[14]_i_1_n_1           |                           |                9 |             30 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | l/sum0                                         |                           |                4 |             32 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/store1_reg_448_511_0_2_i_1_n_1              |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/store1_reg_64_127_0_2_i_1_n_1               |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p1/store2_reg_64_127_0_2_i_1__0_n_1            |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p1/store2_reg_384_447_0_2_i_1__0_n_1           |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p1/store2_reg_256_319_0_2_i_1__0_n_1           |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/store1_reg_0_63_0_2_i_4_n_1                 |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/store1_reg_256_319_0_2_i_1_n_1              |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p1/store2_reg_192_255_0_2_i_1__0_n_1           |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/store1_reg_192_255_0_2_i_1_n_1              |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/store1_reg_128_191_0_2_i_1_n_1              |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p1/store2_reg_576_639_0_2_i_1__0_n_1           |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p1/store2_reg_320_383_0_2_i_1__0_n_1           |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/store1_reg_512_575_0_2_i_1_n_1              |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/store1_reg_384_447_0_2_i_1_n_1              |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p1/store2_reg_512_575_0_2_i_1__0_n_1           |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p1/store2_reg_448_511_0_2_i_1__0_n_1           |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p1/store2_reg_128_191_0_2_i_1__0_n_1           |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p1/store2_reg_0_63_0_2_i_1__1_n_1              |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p1/mem2_reg_960_1023_0_2_i_1__2_n_1            |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p1/mem2_reg_704_767_0_2_i_1__2_n_1             |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/store1_reg_576_639_0_2_i_1_n_1              |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p1/mem2_reg_768_831_0_2_i_1__2_n_1             |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q2/store1_reg_320_383_0_2_i_1_n_1              |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p1/mem2_reg_832_895_0_2_i_1__2_n_1             |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p1/mem2_reg_896_959_0_2_i_1__2_n_1             |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p1/mem2_reg_640_703_0_2_i_1__2_n_1             |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/store1_reg_576_639_0_2_i_1__0_n_1            |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/store1_reg_320_383_0_2_i_1__0_n_1            |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/store1_reg_448_511_0_2_i_1__0_n_1            |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/store1_reg_64_127_0_2_i_1__0_n_1             |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/store1_reg_512_575_0_2_i_1__0_n_1            |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/store1_reg_384_447_0_2_i_1__0_n_1            |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/store1_reg_192_255_0_2_i_1__0_n_1            |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/store1_reg_128_191_0_2_i_1__0_n_1            |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/store1_reg_0_63_0_2_i_1_n_1                  |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | q/store1_reg_256_319_0_2_i_1__0_n_1            |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p1/mem2_reg_1216_1279_0_2_i_1__2_n_1           |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p1/mem2_reg_1088_1151_0_2_i_1__2_n_1           |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p1/mem2_reg_1152_1215_0_2_i_1__2_n_1           |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p1/mem2_reg_1024_1087_0_2_i_1__2_n_1           |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p/store2_reg_64_127_0_2_i_1_n_1                |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p/store2_reg_384_447_0_2_i_1_n_1               |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p/store2_reg_256_319_0_2_i_1_n_1               |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p/store2_reg_576_639_0_2_i_1_n_1               |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p/store2_reg_320_383_0_2_i_1_n_1               |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p/store2_reg_512_575_0_2_i_1_n_1               |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p/store2_reg_448_511_0_2_i_1_n_1               |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p/store2_reg_192_255_0_2_i_1_n_1               |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p/store2_reg_128_191_0_2_i_1_n_1               |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p/store2_reg_0_63_0_2_i_3__1_n_1               |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p/mem2_reg_768_831_0_2_i_1__1_n_1              |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p/mem2_reg_832_895_0_2_i_1__1_n_1              |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p/mem2_reg_704_767_0_2_i_1__1_n_1              |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p/mem2_reg_960_1023_0_2_i_1__1_n_1             |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p/mem2_reg_896_959_0_2_i_1__1_n_1              |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p/mem2_reg_640_703_0_2_i_1__1_n_1              |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p/mem2_reg_1216_1279_0_2_i_1__1_n_1            |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p/mem2_reg_1088_1151_0_2_i_1__1_n_1            |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p/mem2_reg_1024_1087_0_2_i_1__1_n_1            |                           |                8 |             56 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | p/mem2_reg_1152_1215_0_2_i_1__1_n_1            |                           |                8 |             56 |
+|  slow_clock_BUFG                         |                                                |                           |               24 |             64 |
+|  CLK_IBUF_BUFG                           |                                                |                           |               10 |             66 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e12/sum_reg_512_639_0_0_i_1_n_1                |                           |               10 |             80 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e12/sum_reg_0_127_0_0_i_1_n_1                  |                           |               10 |             80 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e12/sum_reg_128_255_0_0_i_1_n_1                |                           |               10 |             80 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e12/sum_reg_256_383_0_0_i_1_n_1                |                           |               10 |             80 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d12/sum_reg_512_639_0_0_i_1__0_n_1             |                           |               10 |             80 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d12/sum_reg_384_511_0_0_i_1__0_n_1             |                           |               10 |             80 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | e12/sum_reg_384_511_0_0_i_1_n_1                |                           |               10 |             80 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d12/sum_reg_128_255_0_0_i_1__0_n_1             |                           |               10 |             80 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d12/sum_reg_0_127_0_0_i_1__0_n_1               |                           |               10 |             80 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | d12/sum_reg_256_383_0_0_i_1__0_n_1             |                           |               10 |             80 |
+|  n_0_3751_BUFG                           |                                                |                           |               34 |            120 |
+|  slow_clock_BUFG                         | l/toggled1                                     |                           |               24 |            120 |
+|  g/VGA_CLK_108M/h_cntr_reg_reg[9]_rep__2 | g/VGA_CONTROL/eqOp2_in                         | g/VGA_CONTROL/v_cntr_reg0 |               62 |            166 |
+|  g/VGA_CLK_108M/h_cntr_reg_reg[9]_rep__2 |                                                | g/VGA_CONTROL/eqOp2_in    |               90 |            286 |
+|  J_MIC3_Pin1_OBUF_BUFG                   |                                                |                           |              129 |            664 |
++------------------------------------------+------------------------------------------------+---------------------------+------------------+----------------+
+
+

@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1554570072">
+  <File Type="ROUTE-PWR" Name="Voice_Scope_TOP_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="Voice_Scope_TOP.tcl"/>
+  <File Type="BITSTR-BMM" Name="Voice_Scope_TOP_bd.bmm"/>
+  <File Type="ROUTE-PWR-SUM" Name="Voice_Scope_TOP_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="Voice_Scope_TOP_reports.tcl"/>
+  <File Type="OPT-DCP" Name="Voice_Scope_TOP_opt.dcp"/>
+  <File Type="OPT-DRC" Name="Voice_Scope_TOP_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Voice_Scope_TOP.hwdef"/>
+  <File Type="PWROPT-DCP" Name="Voice_Scope_TOP_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="Voice_Scope_TOP_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Voice_Scope_TOP_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Voice_Scope_TOP_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Voice_Scope_TOP_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Voice_Scope_TOP_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Voice_Scope_TOP_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="Voice_Scope_TOP.bgn"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Voice_Scope_TOP_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="Voice_Scope_TOP.bin"/>
+  <File Type="PHYSOPT-DCP" Name="Voice_Scope_TOP_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="Voice_Scope_TOP.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Voice_Scope_TOP_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="Voice_Scope_TOP_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Voice_Scope_TOP_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="Voice_Scope_TOP_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Voice_Scope_TOP_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="Voice_Scope_TOP_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="Voice_Scope_TOP.ltx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Voice_Scope_TOP_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="Voice_Scope_TOP.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Voice_Scope_TOP_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Voice_Scope_TOP_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="Voice_Scope_TOP.sysdef"/>
+  <File Type="ROUTE-PWR-RPX" Name="Voice_Scope_TOP_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="Voice_Scope_TOP_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Voice_Scope_TOP_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Voice_Scope_TOP_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Voice_Scope_TOP_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Voice_Scope_TOP_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="Voice_Scope_TOP_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Voice_Scope_TOP_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Voice_Scope_TOP_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Voice_Scope_TOP_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Voice_Scope_TOP_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Voice_Scope_TOP_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="Voice_Scope_TOP.bit"/>
+  <File Type="BITSTR-RBT" Name="Voice_Scope_TOP.rbt"/>
+  <File Type="BITSTR-NKY" Name="Voice_Scope_TOP.nky"/>
+  <File Type="BG-DRC" Name="Voice_Scope_TOP.drc"/>
+  <File Type="RDI-RDI" Name="Voice_Scope_TOP.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/FOR EE2026/2Display1.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../FOR EE2026/2Display1.v"/>
+        <Attr Name="ImportTime" Val="1554360360"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/Draw_Background.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Draw_Background.v"/>
+        <Attr Name="ImportTime" Val="1553863526"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Draw_Pong.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/OneDrive - National University of Singapore/SEM_2_1819/EE2026/Vivaldo/FINAL/FINAL.srcs/sources_1/new/Draw_Pong.v"/>
+        <Attr Name="ImportTime" Val="1554494660"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/Draw_Waveform.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Draw_Waveform.v"/>
+        <Attr Name="ImportTime" Val="1553154177"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Introduction.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/OneDrive - National University of Singapore/SEM_2_1819/EE2026/Vivaldo/FINAL/FINAL.srcs/sources_1/new/Introduction.v"/>
+        <Attr Name="ImportTime" Val="1554496026"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/TestWave_Gen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/OneDrive - National University of Singapore/SEM_2_1819/EE2026/Vivaldo/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/TestWave_Gen.v"/>
+        <Attr Name="ImportTime" Val="1552546222"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/VGA_DISPLAY.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/OneDrive - National University of Singapore/SEM_2_1819/EE2026/Vivaldo/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/VGA_DISPLAY.v"/>
+        <Attr Name="ImportTime" Val="1537516892"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/VOICE_CAPTURER.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/OneDrive - National University of Singapore/SEM_2_1819/EE2026/Vivaldo/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/VOICE_CAPTURER.v"/>
+        <Attr Name="ImportTime" Val="1552312096"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/bar_graph.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/OneDrive - National University of Singapore/SEM_2_1819/EE2026/Vivaldo/FINAL/FINAL.srcs/sources_1/new/bar_graph.v"/>
+        <Attr Name="ImportTime" Val="1554490773"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/bitmap.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/OneDrive - National University of Singapore/SEM_2_1819/EE2026/Vivaldo/FINAL/FINAL.srcs/sources_1/new/bitmap.v"/>
+        <Attr Name="ImportTime" Val="1554388732"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/clk_div.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../clk_div.v"/>
+        <Attr Name="ImportTime" Val="1553863725"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/color_maker.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/OneDrive - National University of Singapore/SEM_2_1819/EE2026/Vivaldo/FINAL/FINAL.srcs/sources_1/new/color_maker.v"/>
+        <Attr Name="ImportTime" Val="1554490708"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/color_select.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/OneDrive - National University of Singapore/SEM_2_1819/EE2026/Vivaldo/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/color_select.v"/>
+        <Attr Name="ImportTime" Val="1553158478"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/debounce.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/OneDrive - National University of Singapore/SEM_2_1819/EE2026/Vivaldo/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/debounce.v"/>
+        <Attr Name="ImportTime" Val="1552565437"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FOR EE2026/display1.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../FOR EE2026/display1.v"/>
+        <Attr Name="ImportTime" Val="1554360394"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FOR EE2026/display3.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../FOR EE2026/display3.v"/>
+        <Attr Name="ImportTime" Val="1554363298"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/draw_circle.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/OneDrive - National University of Singapore/SEM_2_1819/EE2026/Vivaldo/FINAL/FINAL.srcs/sources_1/new/draw_circle.v"/>
+        <Attr Name="ImportTime" Val="1554551070"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/full1.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/OneDrive - National University of Singapore/SEM_2_1819/EE2026/Vivaldo/FINAL/FINAL.srcs/sources_1/new/full1.v"/>
+        <Attr Name="ImportTime" Val="1554547264"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/full2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/OneDrive - National University of Singapore/SEM_2_1819/EE2026/Vivaldo/FINAL/FINAL.srcs/sources_1/new/full2.v"/>
+        <Attr Name="ImportTime" Val="1554491942"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/full3.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/OneDrive - National University of Singapore/SEM_2_1819/EE2026/Vivaldo/FINAL/FINAL.srcs/sources_1/new/full3.v"/>
+        <Attr Name="ImportTime" Val="1554546185"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/full4.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/OneDrive - National University of Singapore/SEM_2_1819/EE2026/Vivaldo/FINAL/FINAL.srcs/sources_1/new/full4.v"/>
+        <Attr Name="ImportTime" Val="1554546204"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FOR EE2026/horiz_display1.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../FOR EE2026/horiz_display1.v"/>
+        <Attr Name="ImportTime" Val="1554370152"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FOR EE2026/horiz_display2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../FOR EE2026/horiz_display2.v"/>
+        <Attr Name="ImportTime" Val="1554366674"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FOR EE2026/line_graph2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../FOR EE2026/line_graph2.v"/>
+        <Attr Name="ImportTime" Val="1554470813"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/menu.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/OneDrive - National University of Singapore/SEM_2_1819/EE2026/Vivaldo/FINAL/FINAL.srcs/sources_1/new/menu.v"/>
+        <Attr Name="ImportTime" Val="1554436976"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/menu_logic.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/OneDrive - National University of Singapore/SEM_2_1819/EE2026/Vivaldo/FINAL/FINAL.srcs/sources_1/new/menu_logic.v"/>
+        <Attr Name="ImportTime" Val="1554552591"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/menu_pong.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/OneDrive - National University of Singapore/SEM_2_1819/EE2026/Vivaldo/FINAL/FINAL.srcs/sources_1/new/menu_pong.v"/>
+        <Attr Name="ImportTime" Val="1554440248"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/my_dff.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/OneDrive - National University of Singapore/SEM_2_1819/EE2026/Vivaldo/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/my_dff.v"/>
+        <Attr Name="ImportTime" Val="1552565353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FOR EE2026/real_draw.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../FOR EE2026/real_draw.v"/>
+        <Attr Name="ImportTime" Val="1554457654"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FOR EE2026/real_drawx3.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../FOR EE2026/real_drawx3.v"/>
+        <Attr Name="ImportTime" Val="1554434862"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FOR EE2026/real_drawx4.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../FOR EE2026/real_drawx4.v"/>
+        <Attr Name="ImportTime" Val="1554434890"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/score_map.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/OneDrive - National University of Singapore/SEM_2_1819/EE2026/Vivaldo/FINAL/FINAL.srcs/sources_1/new/score_map.v"/>
+        <Attr Name="ImportTime" Val="1554298472"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/sev_seg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/OneDrive - National University of Singapore/SEM_2_1819/EE2026/Vivaldo/FINAL/FINAL.srcs/sources_1/new/sev_seg.v"/>
+        <Attr Name="ImportTime" Val="1554499401"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/single_pulse.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/OneDrive - National University of Singapore/SEM_2_1819/EE2026/Vivaldo/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/new/single_pulse.v"/>
+        <Attr Name="ImportTime" Val="1552565387"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FOR EE2026/slow_background2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../FOR EE2026/slow_background2.v"/>
+        <Attr Name="ImportTime" Val="1554436336"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FOR EE2026/slow_wave.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../FOR EE2026/slow_wave.v"/>
+        <Attr Name="ImportTime" Val="1554436202"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FOR EE2026/slow_waveform.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../FOR EE2026/slow_waveform.v"/>
+        <Attr Name="ImportTime" Val="1554443318"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FOR EE2026/slow_waveform2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../FOR EE2026/slow_waveform2.v"/>
+        <Attr Name="ImportTime" Val="1554443244"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/string_map.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/OneDrive - National University of Singapore/SEM_2_1819/EE2026/Vivaldo/FINAL/FINAL.srcs/sources_1/new/string_map.v"/>
+        <Attr Name="ImportTime" Val="1554293108"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/vertical2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/OneDrive - National University of Singapore/SEM_2_1819/EE2026/Vivaldo/FINAL/FINAL.srcs/sources_1/new/vertical2.v"/>
+        <Attr Name="ImportTime" Val="1554484799"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/vol_indi.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/OneDrive - National University of Singapore/SEM_2_1819/EE2026/Vivaldo/FINAL/FINAL.srcs/sources_1/new/vol_indi.v"/>
+        <Attr Name="ImportTime" Val="1554506749"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FOR EE2026/volume_indicate.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../FOR EE2026/volume_indicate.v"/>
+        <Attr Name="ImportTime" Val="1554436116"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/CLK_108M.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/OneDrive - National University of Singapore/SEM_2_1819/EE2026/Vivaldo/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/CLK_108M.vhd"/>
+        <Attr Name="ImportTime" Val="1537517914"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/VGA_CONTROL.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/OneDrive - National University of Singapore/SEM_2_1819/EE2026/Vivaldo/Audio_Viz_Project_Template/Audio_Viz_Project_Template.srcs/sources_1/imports/new/VGA_CONTROL.vhd"/>
+        <Attr Name="ImportTime" Val="1537517962"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/Voice_Scope_TOP.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Voice_Scope_TOP.v"/>
+        <Attr Name="ImportTime" Val="1553863328"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/FINAL/archive_project_summary.txt">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../archive_project_summary.txt"/>
+        <Attr Name="ImportTime" Val="1554569702"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Voice_Scope_TOP"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Desktop/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Basys3_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1553749905"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
